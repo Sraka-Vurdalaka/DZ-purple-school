@@ -1,0 +1,49 @@
+.timer-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.monthes,
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.monthes::before,
+.days::before,
+.hours::before,
+.minutes::before,
+.seconds::before {
+  position: absolute;
+  font-size: 14px;
+  bottom: -10px;
+}
+
+.monthes::before {
+  content: "Месяцы";
+}
+
+.days::before {
+  content: "Дни";
+}
+
+.hours::before {
+  content: "Часы";
+}
+
+.minutes::before {
+  content: "Минуты";
+}
+
+.seconds::before {
+  content: "Секунды";
+}
